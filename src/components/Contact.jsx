@@ -1,7 +1,12 @@
+import H3 from "../elements/H3"
+
 export default () => {
     return (
-        <h1 className="text-3xl font-bold underline p-4">
-            Hello Contact!
-        </h1>
+        <section className="p-8">
+            <H3 title={'Contact'}/> 
+            <div className="flex justify-center my-8">
+
+            </div>
+        </section>
     )
 }

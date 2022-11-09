@@ -6,8 +6,8 @@ export default () => {
         <>
             <header className="relative h-screen bg-hero bg-center">
                 <div className="absolute h-full w-full bg-black opacity-70"></div>
-                <div className="absolute h-full w-full text-white flex flex-col items-center justify-center xl:flex-row xl:px-20">
-                    <img className='z-10 h-1/4 rounded-full my-8 md:h-1/3 xl:h-3/4' src="/src/assets/oficina_removebg_tinify.png" alt="felipe"/>
+                <div className="absolute h-full w-full text-white flex flex-col items-center justify-center xl:flex-row xl:space-x-18 xl:px-16">
+                    <img className='z-10 h-1/4 rounded-full my-8 landscape:invisible landscape:h-0 md:h-1/3 xl:h-3/4 md:landscape:visible' src="/src/assets/oficina_removebg_tinify.png" alt="felipe"/>
                     <div className="flex flex-col items-center space-y-8 xl:space-y-12">
                         <div className="flex flex-col w-full items-center">
                             <div className="mb-2 xl:mb-4 text-center">
@@ -18,7 +18,7 @@ export default () => {
                                 <LinkIcons />
                             </div>
                         </div>
-                        <div className="flex flex-wrap w-3/4 sm:w-1/2 justify-center p-2 bg-white opacity-60 rounded-lg">
+                        <div className="flex flex-wrap w-3/4 sm:w-1/2 lg:w-3/4 lg:max-w-2xl justify-center p-2 bg-white opacity-60 rounded-lg">
                             <Icons />
                         </div>
                     </div>

@@ -1,7 +1,19 @@
+import H3 from "../elements/H3"
+
 export default () => {
     return (
-        <h1 className="text-3xl font-bold underline p-4">
-            Hello About!
-        </h1>
+        <section className="min-h-1/2 p-8">
+            <H3 title={'About me'}/> 
+            <div className="flex justify-center my-8">
+                <iframe 
+                    className="rounded-lg aspect-video w-full md:3/4 lg:max-w-5xl"
+                    src="https://www.youtube.com/embed/4LIIhSHgjTw" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen 
+                />
+            </div>
+        </section>
     )
 }
