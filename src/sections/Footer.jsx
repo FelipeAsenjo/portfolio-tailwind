@@ -1,7 +1,10 @@
 export default () => {
     return (
-        <h1 className="text-3xl font-bold underline p-4">
-            Hello Footer!
-        </h1>
+        <footer className="bg-[#333] text-white text-center py-4 xl:py-8">
+            <small>
+                Developed and designed by Felipe Asenjo. ©2022. 
+                All rights reserved.
+            </small>
+        </footer>
     )
 }
