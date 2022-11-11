@@ -6,8 +6,23 @@ export default ({modalVisibility, isModalSubmitting, messageSentSuccessfully}) =
     const { colors } = useContext(GeneralContext)
 
     const renderResult = () => {
-        if(messageSentSuccessfully && !isModalSubmitting) return 'Success'
-        if(!messageSentSuccessfully && !isModalSubmitting) return 'Error pos si'
+        if(messageSentSuccessfully && !isModalSubmitting) {
+            return (
+                <div className='flex flex-wrap flex-col justify-center items-center p-2 text-center text-green-500'>
+                    <img className='w-3/4' src='/src/assets/symbols/ok-96.png'/>
+                    <h3>Message sent successfully!</h3>
+                </div>
+            )
+        }
+        if(!messageSentSuccessfully && !isModalSubmitting) {
+            return (
+                <div className='flex flex-wrap flex-col justify-center items-center p-2 text-center text-red-700'>
+                    <img className='w-3/4' src='/src/assets/symbols/cancel-96.png'/>
+                    <h3 className='text-red'>Error, please try again later!</h3>
+                </div>
+            )
+        }
+
         return
     }
 
@@ -26,11 +41,6 @@ export default ({modalVisibility, isModalSubmitting, messageSentSuccessfully}) =
                                 visible={isModalSubmitting}
                             />
                             { renderResult() }
-                            {/* {
-                                messageSentSuccessfully && !isModalSubmitting ?
-                                    'Success' :
-                                    'Error'
-                            } */}
                         </div>
                     </div>
                 </div>
