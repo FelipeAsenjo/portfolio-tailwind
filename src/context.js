@@ -1,3 +1,8 @@
+export const colors = {
+    primary: '#931323',
+    secondary: '#333',
+}
+
 export const techIconsUrl = {
     react: "/src/assets/tech/react-96.png",
     reactNative: "/src/assets/tech/reactNative-96.png",
@@ -72,5 +77,4 @@ export const projects = () => {
             githubRepoUrl: 'https://github.com/FelipeAsenjo/calendar-module'
         },
     ]
-
 }
