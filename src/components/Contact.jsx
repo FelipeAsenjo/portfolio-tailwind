@@ -14,13 +14,12 @@ export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSucces
         })
     }
 
-    const handleFormSubmit = async (values, resetForm, setSubmitting, isSubmitting) => {
+    const handleFormSubmit = async (values, resetForm, setSubmitting) => {
         setIsModalSubmitting(true)
         setModalVisibility(true)
         const stringifyValues = JSON.stringify(values)
         const res = await sendEmail(stringifyValues)
-        // res.status = 500
-        if (res.status > 200) {
+        if (res.status != 200) {
             setSubmitting(false)
             setIsModalSubmitting(false)
             setModalVisibility(false)

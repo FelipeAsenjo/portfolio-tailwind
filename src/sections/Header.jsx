@@ -18,7 +18,7 @@ export default () => {
                                 <LinkIcons />
                             </div>
                         </div>
-                        <div className="flex flex-wrap w-3/4 sm:w-1/2 lg:w-3/4 lg:max-w-2xl justify-center p-2 bg-white opacity-60 rounded-lg">
+                        <div className="flex flex-wrap w-3/4 md:w-1/2 lg:w-3/4 lg:max-w-2xl justify-center p-2 bg-white opacity-80 rounded-lg">
                             <Icons />
                         </div>
                     </div>

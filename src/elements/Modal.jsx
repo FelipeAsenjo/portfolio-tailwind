@@ -5,6 +5,12 @@ import { GeneralContext } from '../App'
 export default ({modalVisibility, isModalSubmitting, messageSentSuccessfully}) => {
     const { colors } = useContext(GeneralContext)
 
+    const renderResult = () => {
+        if(messageSentSuccessfully && !isModalSubmitting) return 'Success'
+        if(!messageSentSuccessfully && !isModalSubmitting) return 'Error pos si'
+        return
+    }
+
     return (
         <div className="fixed z-10 h-screen w-full bottom-0" hidden={!modalVisibility} >
             <div className="relative h-full w-full">
@@ -19,11 +25,12 @@ export default ({modalVisibility, isModalSubmitting, messageSentSuccessfully}) =
                                 width="120"
                                 visible={isModalSubmitting}
                             />
-                            {
+                            { renderResult() }
+                            {/* {
                                 messageSentSuccessfully && !isModalSubmitting ?
                                     'Success' :
                                     'Error'
-                            }
+                            } */}
                         </div>
                     </div>
                 </div>
