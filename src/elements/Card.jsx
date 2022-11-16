@@ -1,4 +1,9 @@
+import { useContext } from "react"
+import { GeneralContext } from "../App"
+import Icons from "./Icons"
+
 export default ({ project, idx }) => {
+    const { contactIconsUrl } = useContext(GeneralContext)
     const isOdd = idx % 2 != 0
 
     return (
@@ -13,14 +18,20 @@ export default ({ project, idx }) => {
                     <p className="text-gray-700">{ project.description }</p>
                 </div>
                 <div className={`flex flex-wrap items-center lg:justify-${isOdd ? 'start' : 'end'}`}>
-                    {project.tech.map((techIcon, idx) => (
+                    <Icons techIconsUrl={project.tech} />
+                    <a 
+                        href={project.githubRepoUrl} 
+                        className='ml-auto mr-3 mt-1.5' 
+                        target='_blank'
+                    >
                         <img 
-                            className="w-10 h-10 mr-4" 
-                            src={techIcon} 
-                            alt={project.title} 
-                            key={idx}
-                        />
-                    ))}
+                            className="hover:scale-110 bg-black rounded-full"
+                            src={contactIconsUrl.github.imageUrl} 
+                            height={48} 
+                            width={48} 
+                            alt='github link' 
+                        /> 
+                    </a>
                 </div>
             </div>
         </div>

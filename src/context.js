@@ -59,21 +59,21 @@ export const projects = () => {
             title: 'Scrapper',
             imageUrl: '/src/assets/placeholder.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-            tech: [nodeJs, console, git],
+            tech: {nodeJs, console, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/cleevy-scrapper'
         },
         {
             title: 'Personal Assistant',
             imageUrl: '/src/assets/placeholder.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-            tech: [nodeJs, docker, git, postgresql, nginx],
+            tech: {nodeJs, docker, git, postgresql, nginx},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/eva'
         },
         {
             title: 'Calendar',
             imageUrl: '/src/assets/placeholder.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-            tech: [react, reactNative, git],
+            tech: {react, reactNative, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/calendar-module'
         },
     ]

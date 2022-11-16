@@ -1,7 +1,11 @@
+import { useContext } from "react"
+import { GeneralContext } from "../App"
 import LinkIcons from "../elements/LinkIcons"
 import Icons from "../elements/Icons"
 
 export default () => {
+    const { techIconsUrl } = useContext(GeneralContext)
+
     return (
         <>
             <header className="relative h-screen bg-hero bg-center">
@@ -19,7 +23,7 @@ export default () => {
                             </div>
                         </div>
                         <div className="flex flex-wrap w-3/4 md:w-1/2 lg:w-3/4 lg:max-w-2xl justify-center p-2 bg-white opacity-80 rounded-lg">
-                            <Icons />
+                            <Icons techIconsUrl={techIconsUrl} />
                         </div>
                     </div>
                 </div>
