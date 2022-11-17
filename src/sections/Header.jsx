@@ -10,7 +10,7 @@ export default () => {
 
     return (
         <>
-            <header className="relative h-screen bg-hero bg-center">
+            <header className="relative h-screen bg-hero bg-center" id="home" data-observe>
                 <div className="absolute h-full w-full bg-black opacity-70"></div>
                 <div className="absolute h-full w-full text-white flex flex-col items-center justify-center xl:flex-row xl:space-x-18 xl:px-16">
                     <img className='z-10 h-1/4 rounded-full my-8 md:h-1/3 xl:h-3/4 sm:landscape:hidden md:landscape:block' src="/src/assets/oficina_removebg_tinify.png" alt="felipe"/>

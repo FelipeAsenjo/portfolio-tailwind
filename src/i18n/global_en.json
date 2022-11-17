@@ -2,6 +2,12 @@
     "header": {
         "subtitle": "Full Stack Developer"
     },
+    "navbar": {
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About me",
+        "contact": "Contact"
+    },
     "projects": {
         "sectionTitle": "Projects"
     },

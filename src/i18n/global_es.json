@@ -2,6 +2,12 @@
     "header": {
         "subtitle": "Desarrollador Full Stack"
     },
+    "navbar": {
+        "home": "Home",
+        "projects": "Proyectos",
+        "about": "Acerca de mi",
+        "contact": "Contacto"
+    },
     "projects": {
         "sectionTitle": "Proyectos"
     },

@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "flowbite": "^1.5.3",
     "formik": "^2.2.9",
     "i18next": "^22.0.5",
     "react": "^18.2.0",

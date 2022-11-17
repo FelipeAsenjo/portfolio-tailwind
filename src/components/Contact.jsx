@@ -55,7 +55,7 @@ export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSucces
     }
 
     return (
-        <section className="p-8">
+        <section className="p-8" id="contact">
             <H3 title={t('contact.sectionTitle')} />
             <div className="relative flex justify-center my-8">
                 <ContactForm

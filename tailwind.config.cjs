@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -23,6 +24,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('flowbite/plugin')
+    require('tailwindcss-intersect'),
+    // require('flowbite/plugin')
   ],
 }
