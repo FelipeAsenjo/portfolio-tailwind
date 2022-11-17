@@ -1,9 +1,11 @@
 import { useContext } from "react"
+import { useTranslation } from "react-i18next"
 import { GeneralContext } from "../App"
 import LinkIcons from "../elements/LinkIcons"
 import Icons from "../elements/Icons"
 
 export default () => {
+    const { t } = useTranslation('global')
     const { techIconsUrl } = useContext(GeneralContext)
 
     return (
@@ -16,7 +18,7 @@ export default () => {
                         <div className="flex flex-col w-full items-center">
                             <div className="mb-2 xl:mb-4 text-center">
                                 <h1 className="text-4xl xl:text-6xl">Felipe Asenjo</h1>
-                                <h2 className="text-2xl my-2 xl:text-4xl">Desarrollador Full Stack</h2>
+                                <h2 className="text-2xl my-2 xl:text-4xl">{t('header.subtitle')}</h2>
                             </div>
                             <div className="flex space-x-10">
                                 <LinkIcons />

@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { Formik } from 'formik'
 
 export default ({handleFormSubmit, handleValidation}) => {
+    const { t } = useTranslation('global')
     return (
         <Formik 
             initialValues={{
@@ -27,7 +29,7 @@ export default ({handleFormSubmit, handleValidation}) => {
                             htmlFor="name" 
                             className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
-                            Full name
+                            {t('contact.namePlaceholder')}
                         </label>
                         <p className='text-primary'>{errors.name && touched.name && errors.name}</p>
                     </div>
@@ -45,7 +47,7 @@ export default ({handleFormSubmit, handleValidation}) => {
                             htmlFor="email" 
                             className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
-                            Email address
+                            {t('contact.emailPlaceholder')}
                         </label>
                         <p className='text-primary'>{errors.email && touched.email && errors.email}</p>
                     </div>
@@ -64,7 +66,7 @@ export default ({handleFormSubmit, handleValidation}) => {
                             htmlFor="message" 
                             className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
-                            Message
+                            {t('contact.messagePlaceholder')}
                         </label>
                         <p className='text-primary'>{errors.message && touched.message && errors.message}</p>
                     </div>
@@ -73,7 +75,7 @@ export default ({handleFormSubmit, handleValidation}) => {
                         className="text-white text-center bg-primary hover:bg-secondary focus:ring-4 focus:ring-gray-300 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 self-end disabled:bg-opacity-10"
                         disabled={isSubmitting}
                     >
-                        Enviar
+                        {t('contact.button')}
                     </button>
                 </form>
             )}

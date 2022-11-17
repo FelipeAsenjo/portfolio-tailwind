@@ -1,0 +1,23 @@
+{
+    "header": {
+        "subtitle": "Full Stack Developer"
+    },
+    "projects": {
+        "sectionTitle": "Projects"
+    },
+    "about": {
+        "sectionTitle": "About me",
+        "message": ""
+    },
+    "contact": {
+        "sectionTitle": "Contact",
+        "namePlaceholder": "Full name",
+        "emailPlaceholder": "Email address",
+        "messagePlaceholder": "Message",
+        "button": "Send"
+    },
+    "footer": {
+        "footer_1": "Developed and designed by Felipe Asenjo. ©",
+        "footer_2": " All rights reserved."
+    }
+}

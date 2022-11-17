@@ -1,0 +1,23 @@
+{
+    "header": {
+        "subtitle": "Desarrollador Full Stack"
+    },
+    "projects": {
+        "sectionTitle": "Proyectos"
+    },
+    "about": {
+        "sectionTitle": "Acerca de mi",
+        "message": "Por favor recuerda activar los subtitulos"
+    },
+    "contact": {
+        "sectionTitle": "Contacto",
+        "namePlaceholder": "Nombre completo",
+        "emailPlaceholder": "Email",
+        "messagePlaceholder": "Mensaje",
+        "button": "Enviar"
+    },
+    "footer": {
+        "footer_1": "Desarrollado y diseñado por Felipe Asenjo. ©",
+        "footer_2": " Todos los derechos reservados."
+    }
+}

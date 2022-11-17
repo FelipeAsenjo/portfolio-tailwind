@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next"
 import H3 from "../elements/H3"
 
 export default () => {
+    const { t } = useTranslation('global')
     return (
         <section className="min-h-1/2 p-8">
-            <H3 title={'About me'}/> 
-            <div className="flex justify-center my-8">
+            <H3 title={t('about.sectionTitle')}/> 
+            <div className="flex flex-col justify-center items-center my-8 text-red-700">
+                <h4 className="text-2xl my-3">{t('about.message')}</h4>
                 <iframe 
                     className="rounded-lg aspect-video w-full md:3/4 lg:max-w-5xl"
                     src="https://www.youtube.com/embed/UN74axQXaGo" 

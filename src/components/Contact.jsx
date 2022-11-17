@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 import ContactForm from "../elements/ContactForm"
 import H3 from "../elements/H3"
 
 const { VITE_MAILER_URL } = import.meta.env
 
 export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSuccessfully }) => {
+    const { t } = useTranslation('global')
     const sendEmail = async (values) => {
         return await fetch(VITE_MAILER_URL, {
             method: 'POST',
@@ -54,7 +56,7 @@ export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSucces
 
     return (
         <section className="p-8">
-            <H3 title={'Contact'} />
+            <H3 title={t('contact.sectionTitle')} />
             <div className="relative flex justify-center my-8">
                 <ContactForm
                     handleFormSubmit={handleFormSubmit}
