@@ -22,6 +22,7 @@ export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSucces
         if (res.status != 200) {
             setSubmitting(false)
             setIsModalSubmitting(false)
+            setMessageSentSuccessfully(false)
             setModalVisibility(false)
 
             return

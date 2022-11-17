@@ -16,7 +16,7 @@ module.exports = {
         secondary: '#333',
       },
       backgroundImage: {
-        'hero': 'url("/src/assets/coding_b&w_1440.png")',
+        'hero': 'url("/src/assets/coding_b&w_1200.png")',
         'avatar': 'url("/src/assets/oficina_removebg_tinify.png")'
       }
     },

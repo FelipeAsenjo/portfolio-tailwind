@@ -57,21 +57,21 @@ export const projects = () => {
     return [
         {
             title: 'Scrapper',
-            imageUrl: '/src/assets/placeholder.jpg',
+            imageUrl: '/src/assets/projects/project_scrapper.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, console, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/cleevy-scrapper'
         },
         {
             title: 'Personal Assistant',
-            imageUrl: '/src/assets/placeholder.jpg',
+            imageUrl: '/src/assets/projects/rest-api-100.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, docker, git, postgresql, nginx},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/eva'
         },
         {
             title: 'Calendar',
-            imageUrl: '/src/assets/placeholder.jpg',
+            imageUrl: '/src/assets/projects/project_calendar.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {react, reactNative, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/calendar-module'
