@@ -1,13 +1,32 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useTranslation } from "react-i18next"
 
-export default () => {
+export default ({ activeRef }) => {
     const { t, i18n } = useTranslation('global')
     const [menuVisibility, setMenuVisibility] = useState(true)
 
+    const homeRef = useRef()
+    const projectsRef = useRef()
+    const aboutRef = useRef()
+    const contactRef = useRef()
+
     useEffect(() => {
-        console.log(window.location.href)
-    }, [window.location])
+        const refs = [homeRef, projectsRef, aboutRef, contactRef]
+
+        refs.forEach(ref => {
+            const hash = ref.current.hash.substring(1)
+            const classList = ref.current.classList
+
+            if(activeRef === hash) {
+                classList.remove('text-secondary', 'md:hover:text-primary')
+                classList.add('bg-primary', 'text-white', 'leading-6')
+
+                return
+            }
+            classList.remove('bg-primary', 'text-white')
+            classList.add('text-secondary')
+        })
+    }, [activeRef])
     
     const changeLanguage = () => {
         if(i18n.language === 'es') return i18n.changeLanguage('en')
@@ -45,16 +64,44 @@ export default () => {
                 <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" hidden={menuVisibility} >
                     <ul className="flex flex-col p-4 mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#home" className="block py-2 pl-3 pr-4 text-primary rounded md:bg-transparent md:p-0" onClick={handleAnchorClick}>{t('navbar.home')}</a>
+                            <a 
+                                href="#home" 
+                                className="block py-2 pl-3 pr-4 text-secondary md:hover:text-primary rounded md:p-0" 
+                                onClick={handleAnchorClick}
+                                ref={homeRef}
+                            >
+                                {t('navbar.home')}
+                            </a>
                         </li>
                         <li>
-                            <a href="#projects" className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" onClick={handleAnchorClick}>{t('navbar.projects')}</a>
+                            <a 
+                                href="#projects" 
+                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                onClick={handleAnchorClick}
+                                ref={projectsRef}
+                            >
+                                {t('navbar.projects')}
+                            </a>
                         </li>
                         <li>
-                            <a href="#about" className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" onClick={handleAnchorClick}>{t('navbar.about')}</a>
+                            <a 
+                                href="#about" 
+                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                onClick={handleAnchorClick}
+                                ref={aboutRef}
+                            >
+                                {t('navbar.about')}
+                            </a>
                         </li>
                         <li>
-                            <a href="#contact" className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" onClick={handleAnchorClick}>{t('navbar.contact')}</a>
+                            <a 
+                                href="#contact" 
+                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                onClick={handleAnchorClick}
+                                ref={contactRef}
+                            >
+                                {t('navbar.contact')}
+                            </a>
                         </li>
                     </ul>
                 </div>
