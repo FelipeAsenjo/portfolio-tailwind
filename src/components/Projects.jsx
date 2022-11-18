@@ -1,15 +1,16 @@
 import { useContext } from "react"
-import { useTranslation } from "react-i18next"
+import { useTranslation, Trans } from "react-i18next"
 import { useInView } from "react-intersection-observer"
 import { GeneralContext } from "../App"
 import Card from "../elements/Card"
 import H3 from "../elements/H3"
 
 export default ({ setActiveRef }) => {
-    const { t } = useTranslation('global')
+    const { t, ready } = useTranslation('global')
     const { projects } = useContext(GeneralContext)
 
     const publicProjects = projects()
+    const translatedProjects = t('projects.projects', { returnObjects: true })
 
     const handleChange = (inView, entry) => {
         if(inView) setActiveRef(entry.target.id)
@@ -24,7 +25,8 @@ export default ({ setActiveRef }) => {
         <section className="min-h-screen p-8" id="projects" ref={ref}>
             <H3 title={t('projects.sectionTitle')}/>
             {publicProjects.map((project, idx) => {
-                return <Card project={project} idx={idx} key={idx}/>
+                const joinedProjects = {...project, ...translatedProjects[idx]}
+                return <Card project={joinedProjects} idx={idx} key={idx}/>
             })}
         </section>
     )

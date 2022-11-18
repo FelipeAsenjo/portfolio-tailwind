@@ -14,8 +14,9 @@ export default ({ project, idx }) => {
             />
             <div className={`rounded-b-lg bg-white p-4 flex flex-col justify-between ${isOdd ? 'lg:rounded-l-lg' : 'lg:rounded-r-lg'} dark:bg-gray-300`}>
                 <div className="mb-8">
+                    <p>{ project.subtitle }</p>
                     <div className="text-gray-900 font-bold text-xl mb-2">{ project.title }</div>
-                    <p className="text-gray-700">{ project.description }</p>
+                    <p className="text-gray-700 min-w-full">{ project.description }</p>
                 </div>
                 <div className={`flex flex-wrap items-center lg:justify-${isOdd ? 'start' : 'end'}`}>
                     <Icons techIconsUrl={project.tech} />

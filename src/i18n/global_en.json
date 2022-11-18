@@ -9,7 +9,18 @@
         "contact": "Contact"
     },
     "projects": {
-        "sectionTitle": "Projects"
+        "sectionTitle": "Projects",
+        "projects": [
+            {
+                "description": "The Scrapper it's a project to speed up the monthly reports from a certain business, by getting the information this way i saved the time that it gets to manually collect this info from one entire day to an average of 7 minutes."
+            },
+            {
+                "description": "Personal Assistant it's an API designed to store, unify and fetch my personal information through my own apps, improving the availability, privacy and flexibility in the usage of my personal info. Calendar, users, contacts and workouts are some of the concepts covered in this project."
+            },
+            {
+                "description": "The Calendar it's a mobile app created to reduce the friction between 3 daily life organizational concepts, Calendar, To-Do's and Notes. They're usually perceived as different concepts, but they're all kind of a Task... What if every Note and To-Do could go in and go out of the Calendar as you need and viceversa?"
+            }
+        ] 
     },
     "about": {
         "sectionTitle": "About me",

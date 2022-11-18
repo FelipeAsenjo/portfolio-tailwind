@@ -40,14 +40,14 @@ export default ({ activeRef }) => {
     return (
         <nav className="sticky z-20 top-0 w-full bg-primary px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="#home" className="flex items-center">
+                <a href="#home" className="flex items-center rounded-lg bg-gray-100 px-2">
                     <img src="/logo_felipe_no-bg.png" className="h-9 mr-3 sm:h-12" alt="felipe logo" />
-                    <span className="self-center text-xl font-semibold whitespace-nowrap text-white"></span>
+                    <span className="self-center text-xl font-semibold whitespace-nowrap text-secondary rounded p-2">Felipe</span>
                 </a>
                 <div className="flex items-center md:order-2">
                     <button 
                         type="button" 
-                        className="inline-flex items-center justify-center p-2 text-sm text-white rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                        className="inline-flex items-center justify-center p-3 text-sm text-gray-900 rounded cursor-pointer hover:text-white bg-gray-100 hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white"
                         onClick={changeLanguage}
                     >
                         {i18n.language === 'es' ? '🇪🇸 Español' : '🇺🇲 English'}

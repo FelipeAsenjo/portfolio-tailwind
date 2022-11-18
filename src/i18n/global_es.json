@@ -9,7 +9,18 @@
         "contact": "Contacto"
     },
     "projects": {
-        "sectionTitle": "Proyectos"
+        "sectionTitle": "Proyectos",
+        "projects": [
+            {
+                "description": "El Scrapper es un proyecto que nace de la necesidad de agilizar los reportes mensuales de los clientes de determinada empresa, al obtener la información de esta manera logré recortar el tiempo que tomaba recolectar la información de manera manual de más de un día de trabajo a solo 7 minutos en promedio."
+            },
+            {
+                "description": "Personal Assistant es una API pensada para almacenar, unificar y consultar mi información personal a través de mis propias aplicaciones, aumentando la disponibilidad, privacidad y flexibilidad en el uso de mi información. Calendario, usuarios, contactos y entrenamiento son algunos de los conceptos abarcados en este proyecto."
+            },
+            {
+                "description": "El Calendario es una aplicación movil creada para disminuir la fricción entre 3 conceptos de organización del día a día, Calendario, Pendientes y Notas. Usualmente se perciben como conceptos distintos, pero las 3 son una especie de Tarea... Que tal si todas las Notas y Pendientes pudieran entrar y salir del Calendario según lo necesites y viceversa?"
+            }
+        ]
     },
     "about": {
         "sectionTitle": "Acerca de mi",
