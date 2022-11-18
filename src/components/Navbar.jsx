@@ -58,7 +58,7 @@ export default ({ activeRef }) => {
                         onClick={toggleMenuVisibility}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <img src="/src/assets/symbols/menu-white-96.png" className="w-6 h-6" alt="open main menu" aria-hidden='true'/>
+                        <img src="/assets/symbols/menu-white-96.png" className="w-6 h-6" alt="open main menu" aria-hidden='true'/>
                     </button>
                 </div>
                 <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" hidden={menuVisibility} >
