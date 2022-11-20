@@ -17,7 +17,7 @@ export default ({ setActiveRef }) => {
     }
 
     const { ref, inView, entry } = useInView({
-        threshold: 0.4,
+        threshold: 0.3,
         onChange: (inView, entry) => handleChange(inView, entry)
     })
 

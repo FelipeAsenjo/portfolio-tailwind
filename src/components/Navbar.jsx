@@ -62,11 +62,11 @@ export default ({ activeRef }) => {
                     </button>
                 </div>
                 <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" hidden={menuVisibility} >
-                    <ul className="flex flex-col p-4 mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="flex flex-col p-3 mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a 
                                 href="#home" 
-                                className="block py-2 pl-3 pr-4 text-secondary md:hover:text-primary rounded md:p-0" 
+                                className="block p-1 text-secondary md:hover:text-primary rounded outline-green-800" 
                                 onClick={handleAnchorClick}
                                 ref={homeRef}
                             >
@@ -76,7 +76,7 @@ export default ({ activeRef }) => {
                         <li>
                             <a 
                                 href="#projects" 
-                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                className="block p-1 text-secondary rounded md:hover:text-primary" 
                                 onClick={handleAnchorClick}
                                 ref={projectsRef}
                             >
@@ -86,7 +86,7 @@ export default ({ activeRef }) => {
                         <li>
                             <a 
                                 href="#about" 
-                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                className="block p-1 text-secondary rounded md:hover:text-primary" 
                                 onClick={handleAnchorClick}
                                 ref={aboutRef}
                             >
@@ -96,7 +96,7 @@ export default ({ activeRef }) => {
                         <li>
                             <a 
                                 href="#contact" 
-                                className="block py-2 pl-3 pr-4 text-secondary rounded md:hover:text-primary md:p-0" 
+                                className="block p-1 text-secondary rounded md:hover:text-primary" 
                                 onClick={handleAnchorClick}
                                 ref={contactRef}
                             >
