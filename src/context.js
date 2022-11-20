@@ -67,7 +67,7 @@ export const projects = () => {
             imageUrl: '/assets/projects/project_personal-assistant.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, docker, git, postgresql, nginx},
-            githubRepoUrl: 'https://github.com/FelipeAsenjo/eva'
+            githubRepoUrl: 'https://github.com/FelipeAsenjo/personal_assistant'
         },
         {
             title: 'Calendar',
