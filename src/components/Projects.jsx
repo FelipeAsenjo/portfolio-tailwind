@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { useTranslation, Trans } from "react-i18next"
+import { useTranslation } from "react-i18next"
 import { useInView } from "react-intersection-observer"
 import { GeneralContext } from "../App"
 import Card from "../elements/Card"
