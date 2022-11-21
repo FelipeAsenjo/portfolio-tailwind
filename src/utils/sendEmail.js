@@ -1,7 +1,5 @@
-const { VITE_MAILER_URL } = import.meta.env
-
 const sendEmail = async (values) => {
-    return await fetch(VITE_MAILER_URL, {
+    return await fetch('https://admin-services-eqtsi7580-felipeasenjo.vercel.app/mailer', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json'
