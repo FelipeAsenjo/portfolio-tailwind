@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { GeneralContext } from "../App"
 import { RotatingLines } from "react-loader-spinner"
 
-export default () => {
+export default ({isModalSubmitting}) => {
     const { colors } = useContext(GeneralContext)
     return (
         <RotatingLines
@@ -10,7 +10,7 @@ export default () => {
             strokeWidth="5"
             animationDuration="0.75"
             width="120"
-            // visible={isModalSubmitting}
+            visible={isModalSubmitting}
         />
     )
 }

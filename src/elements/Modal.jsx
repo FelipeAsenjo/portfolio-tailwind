@@ -29,7 +29,9 @@ export default ({modalVisibility, isModalSubmitting, messageSentSuccessfully}) =
                 <div className="absolute z-20 h-full w-full">
                     <div className="flex justify-center items-center h-full w-full">
                         <div className="flex justify-center bg-white h-1/2 w-1/2 rounded-lg">
-                            <CustomLoader />
+                            <CustomLoader 
+                                isModalSubmitting={isModalSubmitting}
+                            />
                             { renderResult() }
                         </div>
                     </div>
