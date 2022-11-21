@@ -41,7 +41,7 @@ export default ({ activeRef }) => {
         <nav className="sticky z-20 top-0 w-full bg-primary px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="#home" className="flex items-center rounded-lg bg-gray-100 px-2">
-                    <img src="/logo_felipe_no-bg.png" className="h-9 mr-3 sm:h-12" alt="felipe logo" />
+                    <img src="/logo_tinify_no-bg.png" className="h-9 mr-3 sm:h-12" alt="felipe logo" />
                     <span className="self-center text-xl font-semibold whitespace-nowrap text-secondary rounded p-2">Felipe</span>
                 </a>
                 <div className="flex items-center md:order-2">
@@ -58,7 +58,7 @@ export default ({ activeRef }) => {
                         onClick={toggleMenuVisibility}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <img src="/assets/symbols/menu-white-96.png" className="w-6 h-6" alt="open main menu" aria-hidden='true'/>
+                        <img src="/assets/symbols/menu-white-96.webp" className="w-6 h-6" alt="open main menu" aria-hidden='true'/>
                     </button>
                 </div>
                 <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" hidden={menuVisibility} >
