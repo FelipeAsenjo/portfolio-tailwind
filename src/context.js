@@ -34,7 +34,7 @@ export const contactIconsUrl = {
     },
     linkedin: {
         imageUrl: '/assets/social-media/linkedin-96.png',
-        linkUrl: 'https://www.linkedin.com/in/felipe-asenjo-aa0800202/'
+        linkUrl: 'https://www.linkedin.com/in/asenjo-felipe/'
     },
     twitter: {
         imageUrl: '/assets/social-media/twitter-96.png',
@@ -56,7 +56,7 @@ export const projects = () => {
 
     return [
         {
-            title: 'Scrapper',
+            title: 'Scraper',
             imageUrl: '/assets/projects/project_scrapper.webp',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, console, git},
