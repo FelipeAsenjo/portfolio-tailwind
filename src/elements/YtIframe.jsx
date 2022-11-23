@@ -1,5 +1,5 @@
 export default () => {
-    const ytURL = "https://www.youtube.com/embed/UN74axQXaGo"
+    const ytURL = "https://www.youtube.com/embed/6y0U8Dy65A8"
 
     return (
          <iframe 
