@@ -12,7 +12,7 @@ export default ({ project, idx }) => {
                 className={`h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center rounded-t-lg lg:rounded-t-none ${isOdd ? 'lg:rounded-r-lg' : 'lg:rounded-l-lg'} overflow-hidden`} 
                 style={{backgroundImage: `url(${ project.imageUrl })`}} 
             />
-            <div className={`rounded-b-lg bg-white p-4 flex flex-col justify-between ${isOdd ? 'lg:rounded-l-lg' : 'lg:rounded-r-lg'} dark:bg-gray-300`}>
+            <div className={`rounded-b-lg bg-white p-4 flex flex-col justify-between ${isOdd ? 'lg:rounded-l-lg' : 'lg:rounded-r-lg'}`}>
                 <div className="mb-8">
                     <p>{ project.subtitle }</p>
                     <div className="text-gray-900 font-bold text-xl mb-2">{ project.title }</div>
@@ -26,7 +26,7 @@ export default ({ project, idx }) => {
                         target='_blank'
                     >
                         <img 
-                            className="hover:scale-110 bg-black dark:bg-white rounded-full"
+                            className="hover:scale-110 bg-black rounded-full"
                             src={contactIconsUrl.github.imageUrl} 
                             height={48} 
                             width={48} 

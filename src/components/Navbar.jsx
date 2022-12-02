@@ -47,7 +47,7 @@ export default ({ activeRef }) => {
                 <div className="flex items-center md:order-2">
                     <button 
                         type="button" 
-                        className="inline-flex items-center justify-center p-3 text-sm text-gray-900 rounded cursor-pointer hover:text-white bg-gray-100 hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white"
+                        className="inline-flex items-center justify-center p-3 text-sm text-gray-900 rounded cursor-pointer hover:text-white bg-gray-100 hover:bg-transparent"
                         onClick={changeLanguage}
                     >
                         {i18n.language === 'es' ? '🇪🇸 Español' : '🇺🇲 English'}
@@ -62,7 +62,7 @@ export default ({ activeRef }) => {
                     </button>
                 </div>
                 <div className="items-center justify-between w-full md:flex md:w-auto md:order-1" hidden={menuVisibility} >
-                    <ul className="flex flex-col p-3 mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="flex flex-col p-3 mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
                         <li>
                             <a 
                                 href="#home" 
