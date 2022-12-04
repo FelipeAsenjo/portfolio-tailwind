@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { GeneralContext } from "../App"
-import Icons from "./Icons"
+import Icons from "../elements/Icons"
 
 export default ({ project, idx }) => {
     const { contactIconsUrl } = useContext(GeneralContext)

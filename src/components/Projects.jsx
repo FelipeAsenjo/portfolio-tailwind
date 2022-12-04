@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { useTranslation } from "react-i18next"
 import { useInView } from "react-intersection-observer"
 import { GeneralContext } from "../App"
-import Card from "../elements/Card"
+import Card from "../components/Card"
 import H3 from "../elements/H3"
 
 export default ({ setActiveRef }) => {

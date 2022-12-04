@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { useInView } from "react-intersection-observer"
-import ContactForm from "../elements/ContactForm"
+import ContactForm from "./ContactForm"
 import H3 from "../elements/H3"
 
 export default (props) => {
