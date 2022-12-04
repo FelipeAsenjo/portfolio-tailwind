@@ -4,7 +4,7 @@ export default () => {
     const currentDate = new Date()
 
     return (
-        <footer className="bg-secondary text-white text-center py-4 xl:py-8">
+        <footer className="bg-secondary text-white text-center p-4 xl:py-8">
             <small>
                 {t('footer.footer_1')}{currentDate.getFullYear()}. 
                 {t('footer.footer_2')}
