@@ -8,10 +8,15 @@ export default ({modalVisibility, setModalVisibility, children}) => {
                 <div className="absolute h-full w-full bg-black opacity-70" />
                 <div className="absolute z-20 h-full w-full">
                     <button 
-                        className="absolute right-10 top-10 text-6xl text-gray-300"
+                        className="absolute right-10 top-10 text-6xl text-gray-300 hover:scale-125"
                         onClick={handleClick}
                     >
-                        X
+                        <img 
+                            src="/assets/symbols/multiply-60.webp"
+                            height={60}
+                            width={60}
+                            alt="close button"
+                        />
                     </button>
                     <div className="flex justify-center items-center p-10 h-full w-full">
                         <div className="flex justify-center bg-white max-h-full w-auto max-w-screen-lg rounded-lg overflow-y-auto">

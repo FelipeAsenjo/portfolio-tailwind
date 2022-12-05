@@ -29,10 +29,15 @@ export default ({ project, idx, setModalVisibility, setSelectedProject }) => {
                     <Icons techIconsUrl={project.tech} />
                     <div className="ml-auto flex">
                         <button
-                            className='mx-2 px-4 mt-1.5 text-2xl font-bold border-[3px] border-black/70 border-solid rounded-full hover:scale-90' 
+                            className='mx-2 px-4 mt-1.5 text-2xl font-bold rounded-full hover:scale-90' 
                             onClick={handleClick}
                         >
-                            ...
+                            <img 
+                                src="/assets/symbols/eye-60.webp" 
+                                height={42} 
+                                width={42} 
+                                alt="see project" 
+                            />
                         </button>
                         <a 
                             href={project.githubRepoUrl} 
