@@ -6,10 +6,8 @@ import H3 from "../elements/H3"
 export default (props) => {
     const { t } = useTranslation('global')
     const {
-        setIsModalSubmitting, 
-        setModalVisibility, 
-        setMessageSentSuccessfully,
-        setActiveRef
+        setActiveRef,
+        ...restOfProps
     } = props
 
     const handleChange = (inView, entry) => {
@@ -25,11 +23,7 @@ export default (props) => {
         <section className="p-8" id="contact" ref={ref}>
             <H3 title={t('contact.sectionTitle')} />
             <div className="relative flex justify-center my-8">
-                <ContactForm
-                    setIsModalSubmitting={setIsModalSubmitting}
-                    setModalVisibility={setModalVisibility}
-                    setMessageSentSuccessfully={setMessageSentSuccessfully}
-                />
+                <ContactForm {...restOfProps} />
             </div>
         </section>
     )

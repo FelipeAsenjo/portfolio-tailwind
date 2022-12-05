@@ -5,8 +5,8 @@ import { GeneralContext } from "../App"
 import Card from "../components/Card"
 import H3 from "../elements/H3"
 
-export default ({ setActiveRef }) => {
-    const { t, ready } = useTranslation('global')
+export default ({ setActiveRef, ...restOfProps }) => {
+    const { t } = useTranslation('global')
     const { projects } = useContext(GeneralContext)
 
     const publicProjects = projects()
@@ -26,7 +26,12 @@ export default ({ setActiveRef }) => {
             <H3 title={t('projects.sectionTitle')}/>
             {publicProjects.map((project, idx) => {
                 const joinedProjects = {...project, ...translatedProjects[idx]}
-                return <Card project={joinedProjects} idx={idx} key={idx}/>
+                return <Card 
+                    {...restOfProps}
+                    project={joinedProjects} 
+                    idx={idx} 
+                    key={idx}
+                />
             })}
         </section>
     )

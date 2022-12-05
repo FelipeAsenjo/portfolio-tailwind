@@ -23,11 +23,11 @@ export default ({isModalSubmitting, messageSentSuccessfully}) => {
     }
 
     return (
-        <>
+        <figure className='m-40'>
             <CustomLoader 
                 isModalSubmitting={isModalSubmitting}
             />
             { renderResult() }       
-        </>
+        </figure>
     )
 }

@@ -2,12 +2,19 @@ import { useContext } from "react"
 import { GeneralContext } from "../App"
 import Icons from "../elements/Icons"
 
-export default ({ project, idx }) => {
+export default ({ project, idx, setModalVisibility, setSelectedProject }) => {
     const { contactIconsUrl } = useContext(GeneralContext)
     const isOdd = idx % 2 != 0
 
+    const handleClick = () => {
+        setSelectedProject(project)
+        setModalVisibility(true)
+    }
+
     return (
-        <div className={`max-w-sm w-full my-8 mx-auto rounded-lg shadow-md lg:max-w-fit lg:flex ${isOdd ? 'lg:flex-row-reverse': null}`}>
+        <div 
+            className={`max-w-sm w-full my-8 mx-auto rounded-lg shadow-md lg:max-w-fit lg:flex ${isOdd ? 'lg:flex-row-reverse': null}`}
+        >
             <div 
                 className={`h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center rounded-t-lg lg:rounded-t-none ${isOdd ? 'lg:rounded-r-lg' : 'lg:rounded-l-lg'} overflow-hidden`} 
                 style={{backgroundImage: `url(${ project.imageUrl })`}} 
@@ -20,19 +27,28 @@ export default ({ project, idx }) => {
                 </div>
                 <div className={`flex flex-wrap items-center lg:justify-${isOdd ? 'start' : 'end'}`}>
                     <Icons techIconsUrl={project.tech} />
-                    <a 
-                        href={project.githubRepoUrl} 
-                        className='ml-auto mr-3 mt-1.5' 
-                        target='_blank'
-                    >
-                        <img 
-                            className="hover:scale-110 bg-black rounded-full"
-                            src={contactIconsUrl.github.imageUrl} 
-                            height={48} 
-                            width={48} 
-                            alt='github link' 
-                        /> 
-                    </a>
+                    <div className="ml-auto flex">
+                        <button
+                            className='mx-2 px-4 mt-1.5 text-2xl font-bold border-[3px] border-black/70 border-solid rounded-full hover:scale-90' 
+                            onClick={handleClick}
+                        >
+                            ...
+                        </button>
+                        <a 
+                            href={project.githubRepoUrl} 
+                            className='mr-3 mt-1.5' 
+                            target='_blank'
+                        >
+                            <img 
+                                className="hover:scale-90 bg-black rounded-full"
+                                src={contactIconsUrl.github.imageUrl} 
+                                height={48} 
+                                width={48} 
+                                alt='github link' 
+                            /> 
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>

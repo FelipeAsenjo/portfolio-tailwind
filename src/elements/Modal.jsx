@@ -1,13 +1,20 @@
-import CustomLoader from './CustomLoader'
+export default ({modalVisibility, setModalVisibility, children}) => {
 
-export default ({modalVisibility, children}) => {
+    const handleClick = () => setModalVisibility(false)
+
     return (
-        <div className="fixed z-10 h-screen w-full bottom-0" hidden={!modalVisibility} >
+        <div className="fixed z-30 h-screen w-full bottom-0" hidden={!modalVisibility} >
             <div className="relative h-full w-full">
-                <div className="absolute h-full w-full bg-black opacity-60"></div>
+                <div className="absolute h-full w-full bg-black opacity-70" />
                 <div className="absolute z-20 h-full w-full">
-                    <div className="flex justify-center items-center h-full w-full">
-                        <div className="flex justify-center bg-white h-1/2 w-3/4 lg:w-1/2 rounded-lg">
+                    <button 
+                        className="absolute right-10 top-10 text-6xl text-gray-300"
+                        onClick={handleClick}
+                    >
+                        X
+                    </button>
+                    <div className="flex justify-center items-center p-10 h-full w-full">
+                        <div className="flex justify-center bg-white max-h-full w-auto max-w-screen-lg rounded-lg overflow-y-auto">
                             { children }
                         </div>
                     </div>

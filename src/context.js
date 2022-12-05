@@ -58,6 +58,7 @@ export const projects = () => {
         {
             title: 'Scraper',
             imageUrl: '/assets/projects/project_scrapper.webp',
+            detailsImageUrl: '/assets/projects/scraper_blured&faster_tinify_480p.gif',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, console, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/cleevy-scrapper'
@@ -65,6 +66,7 @@ export const projects = () => {
         {
             title: 'Personal Assistant',
             imageUrl: '/assets/projects/project_personal-assistant_light.webp',
+            detailsImageUrl: '/assets/projects/project_personal-assistant_light.webp',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {nodeJs, docker, git, postgresql, nginx},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/personal_assistant'
@@ -72,6 +74,7 @@ export const projects = () => {
         {
             title: 'Calendar',
             imageUrl: '/assets/projects/project_calendar.webp',
+            detailsImageUrl: '/assets/projects/project_calendar_faster&tinify.gif',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
             tech: {react, reactNative, git},
             githubRepoUrl: 'https://github.com/FelipeAsenjo/calendar-module'
