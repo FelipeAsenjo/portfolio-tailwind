@@ -4,40 +4,40 @@ export const colors = {
 }
 
 export const techIconsUrl = {
-    react: "/assets/tech/react-96.webp",
-    reactNative: "/assets/tech/reactNative-96.webp",
-    vueJs: "/assets/tech/vue-js-96.webp",
-    nodeJs: "/assets/tech/node-js-96.webp",
-    javascript: "/assets/tech/javascript-96.webp",
-    jest: "/assets/tech/jest-96.webp",
-    bootstrap: "/assets/tech/bootstrap-96.webp",
-    tailwindCss: "/assets/tech/tailwind-css-96.webp",
-    materialUi: "/assets/tech/material-ui-96.webp",
-    css3: "/assets/tech/css3-96.webp",
-    sass: "/assets/tech/sass-96.webp",
-    html5: "/assets/tech/html-5-96.webp",
-    console: "/assets/tech/console-96.webp",
-    docker: "/assets/tech/docker-96.webp",
-    nginx: "/assets/tech/nginx-96.webp",
-    python: "/assets/tech/python-96.webp",
-    webpack: "/assets/tech/webpack-96.webp",
-    git: "/assets/tech/git-96.webp",
-    postgresql: "/assets/tech/postgresql-96.webp",
-    mongodb: "/assets/tech/mongodb-96.webp",
-    firebase: "/assets/tech/firebase-96.webp",
+    react: "/assets/tech/react-60.webp",
+    reactNative: "/assets/tech/reactNative-60.webp",
+    vueJs: "/assets/tech/vue-js-60.webp",
+    nodeJs: "/assets/tech/node-js-60.webp",
+    javascript: "/assets/tech/javascript-60.webp",
+    jest: "/assets/tech/jest-60.webp",
+    bootstrap: "/assets/tech/bootstrap-60.webp",
+    tailwindCss: "/assets/tech/tailwind-css-60.webp",
+    materialUi: "/assets/tech/material-ui-60.webp",
+    css3: "/assets/tech/css3-60.webp",
+    sass: "/assets/tech/sass-60.webp",
+    html5: "/assets/tech/html-5-60.webp",
+    console: "/assets/tech/console-60.webp",
+    docker: "/assets/tech/docker-60.webp",
+    nginx: "/assets/tech/nginx-60.webp",
+    python: "/assets/tech/python-60.webp",
+    webpack: "/assets/tech/webpack-60.webp",
+    git: "/assets/tech/git-60.webp",
+    postgresql: "/assets/tech/postgresql-60.webp",
+    mongodb: "/assets/tech/mongodb-60.webp",
+    firebase: "/assets/tech/firebase-60.webp",
 }
 
 export const contactIconsUrl = {
     github: {
-        imageUrl: '/assets/social-media/github-96.png',
+        imageUrl: '/assets/social-media/github-60.webp',
         linkUrl: 'https://github.com/FelipeAsenjo',
     },
     linkedin: {
-        imageUrl: '/assets/social-media/linkedin-96.png',
+        imageUrl: '/assets/social-media/linkedin-60.webp',
         linkUrl: 'https://www.linkedin.com/in/asenjo-felipe/'
     },
     twitter: {
-        imageUrl: '/assets/social-media/twitter-96.png',
+        imageUrl: '/assets/social-media/twitter-60.webp',
         linkUrl: 'https://twitter.com/Sir_Asenjo'
     },
 }
