@@ -1,15 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import { Formik } from 'formik'
-import sendEmail from '../utils/sendEmail'
+import EmailService from '../services/emails'
+// import sendEmail from '../utils/sendEmail'
 
 export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSuccessfully }) => {
     const { t } = useTranslation('global')
+    const emailService = new EmailService()
 
     const handleFormSubmit = async (values, resetForm, setSubmitting) => {
         setIsModalSubmitting(true)
         setModalVisibility(true)
-        const stringifyValues = JSON.stringify(values)
-        const res = await sendEmail(stringifyValues)
+        const res = await emailService.sendEmail(
+            'felipe.asenjo2@gmail.com',
+            `${values.name} is trying to contact you`,
+            values
+        )
         if (res.status != 200) {
             setSubmitting(false)
             setIsModalSubmitting(false)
