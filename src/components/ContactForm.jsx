@@ -15,7 +15,7 @@ export default ({ setIsModalSubmitting, setModalVisibility, setMessageSentSucces
             `${values.name} is trying to contact you`,
             values
         )
-        if (res.status != 200) {
+        if (!res.success) {
             setSubmitting(false)
             setIsModalSubmitting(false)
             setMessageSentSuccessfully(false)

@@ -28,7 +28,6 @@ class Http {
     }
 
     async usePOST(url, body = '', useRealData = false) {
-        console.log('currentEnv', this.currentEnv, VITE_ENV_NAME_PROD, useRealData)
         if(this.currentEnv === VITE_ENV_NAME_PROD || useRealData) {
             try {
                 const res = await fetch(url, {
@@ -38,9 +37,8 @@ class Http {
                     },
                     body
                 })
-                const { data } = await res.json()
 
-                return data
+                return await res.json()
             } catch(err) {
                 console.log('error', err)
             }

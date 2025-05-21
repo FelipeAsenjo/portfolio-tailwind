@@ -15,9 +15,8 @@ class EmailService {
             subject,
             htmlTemplate: this.emailTemplates.default(formValues)
         }
-        const res = await this.http.usePOST(`${apiBaseUrl}/admin-services/api/v1/emails/send`, JSON.stringify(mappedValues), true)
 
-        console.log('res', res)
+        return await this.http.usePOST(`${apiBaseUrl}/admin-services/api/v1/emails/send`, JSON.stringify(mappedValues), true)
     }
 }
 
